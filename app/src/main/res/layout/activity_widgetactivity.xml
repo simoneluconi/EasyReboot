@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    tools:context="com.luconisimone.easyrebootmd.widget"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/app_name"
+        android:id="@+id/widgetopenapp"
+        android:layout_gravity="center_horizontal"
+        android:background="#0277BD"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/widgetfastreboot"
+        android:id="@+id/widgetfastreboot"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/widgetnormalreboot"
+        android:id="@+id/widgetnormalreboot"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/riavviorecoverytesto"
+        android:id="@+id/widgetrecoveryreboot"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/riavviobootloadertesto"
+        android:id="@+id/widgetbootloaderreboot"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/rebootdownloadazione"
+        android:id="@+id/widgetdownloadreboot"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/spegnitesto"
+        android:id="@+id/widgetpoweroff"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/rebootuitesto"
+        android:id="@+id/widgetrebootui1"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+</LinearLayout>

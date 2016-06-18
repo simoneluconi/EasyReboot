@@ -1,0 +1,207 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollViewExtra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_scheduling"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            card_view:cardCornerRadius="4dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textViewSchedTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedulingtitle"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textcolorbittitle"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end|right">
+
+                        <com.rey.material.widget.Switch
+                            style="@style/Switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/switchScheduling"
+                            android:checked="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewSchedDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedulingdes"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearlayoutradio">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewTimeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/time"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/timesetted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="8dp"
+                            android:text="--"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                         <com.rey.material.widget.RadioButton
+                            style="@style/RadioButtonDrawable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/widgetnormalreboot"
+                             android:textSize="14sp"
+                             android:gravity="center"
+                             android:textColor="@color/md_black_1000"
+                             android:id="@+id/radioButtonReboot" />
+
+                        <com.rey.material.widget.RadioButton
+                            style="@style/RadioButtonDrawable"
+                            rbd_strokeColor="@color/material_blue_500"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/spegnitesto"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@color/md_black_1000"
+                            android:id="@+id/radioButtonPowerOff"
+                            android:layout_marginLeft="16dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.rey.material.widget.CheckBox
+                            style="@style/CheckBoxDrawable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notificationonboot"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:id="@+id/checkBoxNotificationOnBoot"
+                            android:textColor="@color/md_black_1000"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.rey.material.widget.CheckBox
+                            style="@style/CheckBoxDrawable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/notifsoundcount"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"
+                            android:id="@+id/checkBoxNotificationCount"
+                            android:textColor="@color/md_black_1000"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/layoutsavesched">
+
+                    <Button
+                        android:id="@+id/buttonsavesched"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/save"
+                        android:textColor="@color/bluematerial"
+                        android:textSize="15sp"
+                        android:layout_marginRight="4dp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        </ScrollView>
+
+    </FrameLayout>

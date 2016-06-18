@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luconisimone.easyrebootmd" >
+
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Avvio" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".widgetactivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetlayout" />
+        </receiver>
+        <receiver
+            android:name=".WidgetSmall"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetfastlayout" />
+        </receiver>
+        <receiver
+            android:name=".WidgetMedium"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetmediumlayout" />
+        </receiver>
+
+        <activity
+            android:name=".NormalReboot"
+            android:label="@string/widgetnormalreboot"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".BootloaderReboot"
+            android:label="@string/riavviobootloaderazione"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".SafeReboot"
+            android:label="@string/widgetsafereboot"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".RecoveryReboot"
+            android:label="@string/riavviorecoveryazione"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".SoftReboot"
+            android:label="@string/widgetfastreboot"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".PowerOff"
+            android:label="@string/spegnitesto"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".rebootsystemui"
+            android:label="@string/rebootuitesto"
+            android:theme="@style/NormalReboot" >
+        </activity>
+        <activity
+            android:name=".Extra"
+            android:label="@string/info"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".widgetactivityfast"
+            android:label="@string/app_name"
+            android:theme="@style/WidgetSmall" >
+        </activity>
+        <activity
+            android:name=".Stats"
+            android:label="@string/stats"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/action_settings"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Scheduling"
+            android:label="@string/schedulingtitle" >
+        </activity>
+        <receiver
+            android:name=".SchedulingStart"
+            android:label="SchedulingStart"
+            android:launchMode="singleTop" >
+        </receiver>
+        <activity
+            android:name=".RebootDownload"
+            android:label="@string/rebootdownloadazione"
+            android:theme="@style/NormalReboot" >
+        </activity>
+    </application>
+
+</manifest>

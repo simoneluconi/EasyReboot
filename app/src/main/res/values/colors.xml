@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bluematerial">#2196F3</color>
+    <color name="greenmaterial">#43A047</color>
+    <color name="redmaterial">#F44336</color>
+    <color name="orangematerial">#FDD835</color>
+    <color name="background">#fafafa</color>
+    <color name="colorprimary">#039BE5</color>
+    <color name="textcolor">#FFFFFF</color>
+    <color name="textcolorgrey">#737373</color>
+    <color name="textcolorbittitle">#000000</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="material_blue_grey">#37474f</color>
+
+    <color name="bluematerialh">#EF6C00</color>
+    <color name="greenmaterialh">#43A047</color>
+    <color name="redmaterialh">#F44336</color>
+    <color name="orangematerialh">#FDD835</color>
+    <color name="backgroundh">#212121</color>
+    <color name="colorprimaryh">#EF6C00</color>
+    <color name="textcolorh">#FFFFFF</color>
+    <color name="textcolorgreyh">#FFFFFF</color>
+    <color name="textcolorbittitleh">#EF6C00</color>
+    <color name="md_black_1000h">#FFFFFF</color>
+    <color name="backgroudblack">#212121</color>
+
+</resources>

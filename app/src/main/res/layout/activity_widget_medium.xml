@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    tools:context="com.luconisimone.easyrebootmd.widget"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/app_name"
+        android:id="@+id/widgetmediumopenapp"
+        android:layout_gravity="center_horizontal"
+        android:background="#0277BD"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/widgetnormalreboot"
+        android:id="@+id/widgetmediumnormalreboot"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/spegnitesto"
+        android:id="@+id/widgetmediumpoweroff"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:text="@string/rebootuitesto"
+        android:id="@+id/widgetmediumrebootui"
+        android:background="#039BE5"
+        android:textColor="@color/textcolor" />
+</LinearLayout>

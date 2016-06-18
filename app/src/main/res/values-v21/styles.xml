@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorprimary</item>
+        <item name="android:colorPrimaryDark">#0277BD</item> #E65100
+        <item name="android:navigationBarColor">#0277BD</item>
+        <item name="android:textColorPrimary">@color/textcolor</item>
+        <item name="android:textColor">@color/textcolorgrey</item>
+
+    </style>
+
+    <style name="Switch" parent="Material.Widget.Switch">
+        <item name="sw_thumbColor">@color/md_material_blue_800</item>
+        <item name="sw_trackColor">@drawable/colorswitch</item>
+    </style>
+
+    <style name="Switchhome" parent="Material.Widget.Switch">
+        <item name="sw_thumbColor">@color/md_material_blue_800</item>
+        <item name="sw_trackColor">@drawable/colorswitchhome</item>
+    </style>
+
+    <style name="Slider" parent="Material.Widget.Slider">
+        <item name="sl_primaryColor">@color/bluematerial</item>
+        <item name="sl_secondaryColor">#0277BD</item>
+    </style>
+
+    <style name="discreteSeekBarStyle" parent="Material.Widget.Switch">
+        <item name="dsb_progressColor">@color/bluematerial</item>
+        <item name="dsb_trackColor">#0277BD</item>
+    </style>
+
+    <style name="SnackBarSingleLine" parent="Material.Widget.SnackBar.Mobile">
+        <item name="sb_backgroundColor">#0277BD</item>
+        <item name="sb_textColor">#FFFFFF</item>
+
+    </style>
+
+    <style name="CheckBoxDrawable" parent="Material.Drawable.CheckBox">
+    <item name="cbd_strokeColor">@color/bluematerial</item>
+    </style>
+
+    <style name="RadioButtonDrawable" parent="Material.Drawable.RadioButton">
+        <item name="rbd_strokeColor">@color/bluematerial</item>
+    </style>
+
+    <style name="ToolbarColor" parent="AppTheme">
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+
+
+    <style name="NormalReboot" parent="android:Theme.Material.Light.Dialog.NoActionBar">
+
+    </style>
+
+    <style name="CustomCommand" parent="android:Theme.NoDisplay">
+
+    </style>
+
+    <style name="WidgetSmall" parent="android:Theme.Material.Light.Dialog.NoActionBar.MinWidth">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+
+</resources>

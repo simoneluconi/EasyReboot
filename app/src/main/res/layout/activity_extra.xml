@@ -1,0 +1,454 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewExtra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp">
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.luconisimone.easyrebootmd.Extra">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_rootextra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/rootinforma"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textcolorbittitle"
+                android:textIsSelectable="false"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deviceinfo"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/deviceinfoextra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="--"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/androidversion"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/androidversionextra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="--"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rootaccess"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rootextra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/root"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rootgivenextra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="--"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/card_view_reboot"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:text="Busybox: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/busyboxinstalledextra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:text="--"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/installbusybox"
+                    android:id="@+id/installbusyboxextra"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:linksClickable="true"
+                    android:textColor="@color/bluematerial"
+                    android:textColorLink="#2196F3" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rootimageextra"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:longClickable="true" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_suggestions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_below="@+id/card_view_translation"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewRebootRecovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/testooggettoemail"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textcolorbittitle"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avvisomessaggio"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonsendemail"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sendemail"
+                android:textColor="@color/bluematerial"
+                android:textSize="15sp"
+                android:layout_marginRight="4dp" />
+
+            <Button
+                android:id="@+id/buttonxda"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/xdathread"
+                android:textColor="@color/bluematerial"
+                android:textSize="15sp"
+                android:layout_marginLeft="4dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_web"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_below="@+id/card_view_suggestions"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewsfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/fbpage"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textcolorbittitle"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewfbdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fbpagedes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonfbpage"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/fbpage"
+                    android:textColor="@color/bluematerial"
+                    android:textSize="15sp"
+                    android:layout_marginRight="4dp" />
+
+                <Button
+                    android:id="@+id/buttonoursite"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/oursite"
+                    android:textColor="@color/bluematerial"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="4dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:visibility="visible"
+        android:layout_below="@+id/card_view_rootextra">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewtranslation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/testotraduzione"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textcolorbittitle"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewtranslationdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/traduzionedescrizione"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttondownloadstring"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/gotofile"
+                    android:textColor="@color/bluematerial"
+                    android:textSize="15sp"
+                    android:layout_marginRight="4dp" />
+
+                <Button
+                    android:id="@+id/buttoncredits"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/credits"
+                    android:textColor="@color/bluematerial"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="4dp" />
+
+                <Button
+                    android:id="@+id/buttonyoutube"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="YOUTUBE"
+                    android:textColor="@color/bluematerial"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="4dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+
+</ScrollView>
+</FrameLayout>

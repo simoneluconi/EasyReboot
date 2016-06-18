@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.luconisimone.easyrebootmd.WidgetSmall">
+
+
+    <ImageButton
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/ButtonWidgetSmall"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:src="@drawable/rebootmdicon2"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop" />
+</RelativeLayout>

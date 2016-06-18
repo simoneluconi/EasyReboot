@@ -1,0 +1,365 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp">
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.luconisimone.easyrebootmd.Settings">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_forceneglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:layout_below="@+id/card_view_confirmationdialog"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forceenglish"
+                android:id="@+id/checkBoxForceEnglish"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_confirmationdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+
+            <com.rey.material.widget.CheckBox
+                style="@style/CheckBoxDrawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/md_black_1000"
+                android:text="@string/checkboxdialog"
+                android:id="@+id/checkBoxDialog"
+ />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+       <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_h2reboot"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="false"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentTop="false"
+           android:layout_gravity="center"
+           android:background="@android:color/transparent"
+           android:elevation="10dp"
+           card_view:cardCornerRadius="4dp"
+           android:layout_below="@+id/card_view_confirmationdialog"
+           android:layout_marginTop="10dp">
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_marginBottom="16dp"
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_marginTop="16dp"
+               android:orientation="vertical">
+
+
+               <com.rey.material.widget.CheckBox
+                   style="@style/CheckBoxDrawable"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="14sp"
+                   android:gravity="center_vertical"
+                   android:textColor="@color/md_black_1000"
+                   android:text="@string/moveinfocard"
+                   android:id="@+id/checkBoxMoveCard"
+                   />
+           </LinearLayout>
+
+       </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_batteryalert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/card_h2reboot"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewRebootRecovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/batterylowalert"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textcolorbittitle"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="--"
+                android:id="@+id/batteryalertdisable"
+                android:layout_marginBottom="16dp" />
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dsb_min="0"
+                app:dsb_max="100"
+                android:id="@+id/seekBarBatteryAlert"
+                android:gravity="center"
+                app:dsb_indicatorFormatter="%d%%"
+                app:dsb_progressColor="@color/bluematerial"
+                app:dsb_trackColor="#0277BD"
+                app:dsb_indicatorColor="@color/bluematerial"
+                />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="--"
+                    android:id="@+id/textViewBatteryAlert"
+                    android:layout_alignBottom="@+id/card_view_batteryalert"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_Widget11Settings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/card_view_batteryalert"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:elevation="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewWidget11Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/widget11settings"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textcolorbittitle"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/widget11settingsdes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp">
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/app_name"
+                    android:id="@+id/switchwidget11Title" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/widgetfastreboot"
+                    android:id="@+id/switchwidget11FastReboot" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/widgetnormalreboot"
+                    android:id="@+id/switchwidget11NormalReboot" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/riavviorecoverytesto"
+                    android:id="@+id/switchwidget11Recovery" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/riavviobootloadertesto"
+                    android:id="@+id/switchwidget11Bootloader" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/rebootdownloadazione"
+                    android:id="@+id/switchwidget11download" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/spegnitesto"
+                    android:id="@+id/switchwidget11Off" />
+
+                <com.rey.material.widget.CheckBox
+                    style="@style/CheckBoxDrawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/md_black_1000"
+                    android:text="@string/rebootuitesto"
+                    android:id="@+id/switchwidget11Systemui" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
+   </ScrollView>
+
+</FrameLayout>
