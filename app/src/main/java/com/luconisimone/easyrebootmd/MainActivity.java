@@ -11,6 +11,7 @@ import android.os.BatteryManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
@@ -246,13 +247,13 @@ public class MainActivity extends AppCompatActivity {
         if (RootTools.isRootAvailable()) {
             root = 1;
             rootyesno.setText(R.string.rootyes);
-            rootyesno.setTextColor(getResources().getColor(R.color.greenmaterial));
+            rootyesno.setTextColor(ContextCompat.getColor(this, R.color.greenmaterial));
             immagineroot.setImageResource(R.drawable.happy);
             Log.v("ROOT", "Si");
         } else {
             root = 0;
             rootyesno.setText(R.string.rootno);
-            rootyesno.setTextColor(getResources().getColor(R.color.redmaterial));
+            rootyesno.setTextColor(ContextCompat.getColor(this, R.color.redmaterial));
             Log.v("ROOT", "No");
 
             new MaterialDialog.Builder(this).title(getString(R.string.noroottx)).iconRes(R.drawable.norooticon)
@@ -273,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
         if (RootTools.isAccessGiven()) {
 
             rootgiven.setText(R.string.rootgivenyes);
-            rootgiven.setTextColor(getResources().getColor(R.color.greenmaterial));
+            rootgiven.setTextColor(ContextCompat.getColor(this, R.color.greenmaterial));
             Log.v("ROOT", "Accesso Concesso");
         } else {
 
@@ -285,7 +286,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
 
                 rootgiven.setText(R.string.rootgivenno);
-                rootgiven.setTextColor(getResources().getColor(R.color.orangematerial));
+                rootgiven.setTextColor(ContextCompat.getColor(this, R.color.orangematerial));
                 rootgiven.setVisibility(View.VISIBLE);
                 Toast.makeText(getApplicationContext(), R.string.rootaccessdenied, Toast.LENGTH_LONG).show();
             }
