@@ -55,7 +55,7 @@ public class Extra extends AppCompatActivity {
         Button buttonxda = (Button) findViewById(R.id.buttonxda);
         Button stringfile = (Button) findViewById(R.id.buttondownloadstring);
         Button credits = (Button) findViewById(R.id.buttoncredits);
-        Button youtube = (Button) findViewById(R.id.buttonyoutube);
+        Button github = (Button) findViewById(R.id.buttongit);
 
         TextView rootyesno = (TextView) findViewById(R.id.rootextra);
         ImageView immagineroot = (ImageView) findViewById(R.id.rootimageextra);
@@ -67,8 +67,6 @@ public class Extra extends AppCompatActivity {
         TextView installbusybox = (TextView) findViewById(R.id.installbusyboxextra);
         CardView infocard = (CardView) findViewById(R.id.card_view_rootextra);
         CardView translcard = (CardView) findViewById(R.id.card_view_translation);
-        Button fbpage = (Button) findViewById(R.id.buttonfbpage);
-        Button oursite = (Button) findViewById(R.id.buttonoursite);
 
         AccountHeader headerResult = new AccountHeaderBuilder()
                 .withActivity(this)
@@ -102,12 +100,12 @@ public class Extra extends AppCompatActivity {
                             myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             Extra.this.startActivity(myIntent);
 
-                        } else if (id==3) {
+                        } else if (id == 3) {
                             Intent myIntent = new Intent(Extra.this, Scheduling.class);
                             myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             Extra.this.startActivity(myIntent);
 
-                        }else if (id == 6) {
+                        } else if (id == 6) {
                             Intent myIntent = new Intent(Extra.this, Settings.class);
                             myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             Extra.this.startActivity(myIntent);
@@ -126,9 +124,9 @@ public class Extra extends AppCompatActivity {
         installbusybox.setText(content);
 
         SharedPreferences sharePref = getSharedPreferences("Dati", Context.MODE_PRIVATE);
-        movecard = sharePref.getInt("movecard" , 0);
+        movecard = sharePref.getInt("movecard", 0);
 
-        if (movecard ==0) {
+        if (movecard == 0) {
             infocard.setVisibility(View.GONE);
 
         } else {
@@ -194,49 +192,28 @@ public class Extra extends AppCompatActivity {
         deviceinfo.setText(deviceinfost);
         androidversion.setText(android.os.Build.VERSION.RELEASE);
 
-        testoemail ="- Please do not delete this text -" + "\n" + "Device: " + deviceinfost + "\n" + "Android Version: " + android.os.Build.VERSION.RELEASE + "\n";
-        if (root==1) {
+        testoemail = "- Please do not delete this text -" + "\n" + "Device: " + deviceinfost + "\n" + "Android Version: " + android.os.Build.VERSION.RELEASE + "\n";
+        if (root == 1) {
             testoemail = testoemail + "Root: Yes" + "\n";
         } else {
             testoemail = testoemail + "Root: No" + "\n";
         }
 
         if (RootTools.isBusyboxAvailable()) {
-           testoemail = testoemail + "Busybox: Yes";
+            testoemail = testoemail + "Busybox: Yes";
         } else {
-            testoemail = testoemail + "Busybox: No"; }
-
-        testoemail = testoemail + "\n" + "- Write Below -";
-        if (Locale.getDefault().getDisplayLanguage().equals("italiano")) {
-            youtube.setVisibility(View.VISIBLE);
-        } else {
-            youtube.setVisibility(View.INVISIBLE);
+            testoemail = testoemail + "Busybox: No";
         }
 
-        fbpage.setOnClickListener(new View.OnClickListener() {
+        testoemail = testoemail + "\n" + "- Write Below -";
+
+        github.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/sharpdr0id"));
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/simoneluconi/EasyReboot"));
                 startActivity(browserIntent);
             }
         });
-
-        oursite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://sharpdroid.altervista.org/"));
-                startActivity(browserIntent);
-            }
-        });
-
-        youtube.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UC9yYzHnDH6K9FFqm7TDe2UQ"));
-                startActivity(browserIntent);
-            }
-        });
-
 
         installbusybox.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -284,10 +261,10 @@ public class Extra extends AppCompatActivity {
                                 getString(R.string.creditsukrainiantranslation) + "\n" + getString(R.string.creditspolishtranslation) + "\n"
                                 + getString(R.string.creditsdutchtranslation) + "\n" + getString(R.string.creditsfrenchtranslation) + "\n" + getString(R.string.creditsspanishtranslation)
                                 + "\n" + getString(R.string.creditsgermantranslation) + "\n" + getString(R.string.creditsportuguesetranslation) + "\n" + getString(R.string.creditsviettranslation) + "\n" + getString(R.string.creditsczechtranslation) + "\n" +
-                        getString(R.string.creditsslovaktranslation))
-                                .positiveText(android.R.string.yes)
-                                .neutralText(R.string.more)
-                                .theme(Theme.LIGHT)
+                                getString(R.string.creditsslovaktranslation))
+                        .positiveText(android.R.string.yes)
+                        .neutralText(R.string.more)
+                        .theme(Theme.LIGHT)
                         .onNeutral(new MaterialDialog.SingleButtonCallback() {
                             @Override
                             public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {

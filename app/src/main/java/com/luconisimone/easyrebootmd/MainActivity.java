@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
             rootyesno.setTextColor(getResources().getColor(R.color.redmaterial));
             Log.v("ROOT", "No");
 
-            MaterialDialog show = new MaterialDialog.Builder(this).title(getString(R.string.noroottx)).iconRes(R.drawable.norooticon)
+            new MaterialDialog.Builder(this).title(getString(R.string.noroottx)).iconRes(R.drawable.norooticon)
                     .theme(Theme.LIGHT).content(getString(R.string.notrootmsg)).positiveText(getString(R.string.oknorootmsg)).neutralText(getString(R.string.uninstall))
                     .onNeutral(new MaterialDialog.SingleButtonCallback() {
                         @Override
@@ -331,26 +331,6 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         }
-
-        if (fbvisited == 0) {
-
-            SharedPreferences sharedPref = getSharedPreferences("Dati", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putInt("fbvisited", 1);
-            editor.apply();
-
-            MaterialDialog show = new MaterialDialog.Builder(this).title(getString(R.string.fbpage))
-                    .theme(Theme.LIGHT).content(getString(R.string.fbpagedes)).positiveText(getString(R.string.fbpage))
-                    .onPositive(new MaterialDialog.SingleButtonCallback() {
-                        @Override
-                        public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
-                            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/sharpdr0id"));
-                            startActivity(browserIntent);
-                        }
-                    })
-                    .show();
-        }
-
 
         //Switch
 

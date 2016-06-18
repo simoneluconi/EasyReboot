@@ -271,80 +271,14 @@
                 android:textSize="15sp"
                 android:layout_marginLeft="4dp" />
 
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view_web"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="false"
-        android:layout_gravity="center"
-        android:background="@android:color/transparent"
-        android:elevation="10dp"
-        card_view:cardCornerRadius="4dp"
-        android:layout_below="@+id/card_view_suggestions"
-        android:layout_marginTop="10dp">
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="24dp"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/textViewsfb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="@string/fbpage"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/textcolorbittitle"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewfbdes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/fbpagedes"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="14sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/buttonfbpage"
+                    android:id="@+id/buttongit"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/fbpage"
-                    android:textColor="@color/bluematerial"
-                    android:textSize="15sp"
-                    android:layout_marginRight="4dp" />
-
-                <Button
-                    android:id="@+id/buttonoursite"
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/oursite"
+                    android:text="GITHUB"
                     android:textColor="@color/bluematerial"
                     android:textSize="15sp"
                     android:layout_marginLeft="4dp" />
@@ -423,17 +357,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/credits"
-                    android:textColor="@color/bluematerial"
-                    android:textSize="15sp"
-                    android:layout_marginLeft="4dp" />
-
-                <Button
-                    android:id="@+id/buttonyoutube"
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="YOUTUBE"
                     android:textColor="@color/bluematerial"
                     android:textSize="15sp"
                     android:layout_marginLeft="4dp" />
